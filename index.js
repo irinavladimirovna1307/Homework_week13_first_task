@@ -34,12 +34,13 @@ function calculateDays() {
   )}`;
 }
 
+//Добавьте условия, которые будут правильно определять склонение слова "день" в соответствии с грамматикой русского языка
 function getCorrectWord(number) {
   let lastDigit = number % 10;
   let lastTwoDigits = number % 100;
 
-  if (lastTwoDigits >= 11 && lastTwoDigits <= 19) {
-    return "дней";
+  if (lastTwoDigits >= 11 && lastTwoDigits <= 14) {
+    return "дней"; // Исключение для 11-14
   }
   if (lastDigit === 1) {
     return "день";
