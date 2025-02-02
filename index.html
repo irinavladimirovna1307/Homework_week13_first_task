@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Дни до дня рождения</title>
+  </head>
+  <body>
+    <div class="date-container">
+      <h1>Дни до дня рождения</h1>
+      <div class="date-form">
+        <label for="birthday">Дата вашего рождения:</label>
+        <input type="date" id="birthday" />
+      </div>
+      <button onclick="calculateDays()">Подсчитать</button>
+      <p id="result"></p>
+      <p id="error">Введите дату рождения!</p>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
